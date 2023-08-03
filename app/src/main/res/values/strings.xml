@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Tasty</string>
+
+    <string name="foodMenuImage">Food menu image</string>
+    <string name="food">Food</string>
+    <string name="home">Home</string>
+    <string name="foodItemImage">Food Item Image</string>
+    <string name="decreaseItemCount">Decrease Item Count</string>
+    <string name="increaseItemCount">Increase Item Count</string>
+    <string name="filterList">Filter</string>
+    <string name="sortByPriceLowToHigh">Sort by price low to high</string>
+    <string name="sortByRating">Sort by rating</string>
+    <string name="connectionUnavailable">No Internet connection</string>
+    <string name="zero">0</string>
+    <string name="quantity">Quantity</string>
+    <string name="cartIcon">Cart Icon</string>
+    <string name="viewCart">VIEW CART</string>
+    <string name="cart">Cart</string>
+    <string name="closeIcon">Close Icon</string>
+    <string name="itemQuantityAndPrice">%1$d X %1$d</string>
+    <string name="bill_details">Bill Details</string>
+    <string name="total">Total</string>
+    <string name="delivery_charges">Delivery Charges</string>
+    <string name="total_payment">Total Payment</string>
+    <string name="thirty">+ ₹ 30.0</string>
+
+</resources>

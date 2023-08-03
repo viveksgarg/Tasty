@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cartLayout"
+    android:visibility="gone"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/green"
+    android:orientation="horizontal"
+    android:weightSum="3">
+
+    <ImageView
+        android:id="@+id/cartIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.25"
+        android:contentDescription="@string/cartIcon"
+        android:padding="@dimen/space_lg"
+        android:src="@drawable/cart" />
+
+    <TextView
+        android:id="@+id/quantityOfItems"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.25"
+        android:paddingStart="@dimen/space_xsm"
+        android:paddingTop="@dimen/space_lg"
+        android:paddingEnd="@dimen/space_xxsm"
+        android:paddingBottom="@dimen/space_lg"
+        android:text="@string/zero"
+        android:textAppearance="@style/TextAppearance.Material3.BodyLarge"
+        android:textColor="@color/white"
+        app:drawableEndCompat="@drawable/ic_line_divider" />
+
+    <TextView
+        android:id="@+id/foodItemPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.25"
+        android:paddingTop="@dimen/space_lg"
+        android:paddingEnd="@dimen/space_xxsm"
+        android:paddingBottom="@dimen/space_lg"
+        android:textAppearance="@style/TextAppearance.Material3.BodyLarge"
+        android:textColor="@color/white"
+        tools:text="132.5" />
+
+    <TextView
+        android:id="@+id/viewCartCta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:gravity="end"
+        android:padding="@dimen/space_lg"
+        android:textColor="@color/white"
+        android:text="@string/viewCart" />
+</LinearLayout>

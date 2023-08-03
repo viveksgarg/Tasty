@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:strokeColor="@color/white"
+    app:cardElevation="@dimen/space_lg"
+    android:layout_margin="@dimen/space_xsm">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/foodItemImage"
+            android:layout_width="@dimen/match_constraint"
+            android:layout_height="@dimen/image_height"
+            android:contentDescription="@string/foodItemImage"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_food_item_sample"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/foodItemRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/space_xsm"
+            android:background="@color/atomicTangerine"
+            android:drawablePadding="@dimen/space_xxsm"
+            android:padding="@dimen/space_xsm"
+            android:textColor="@color/white"
+            app:drawableEndCompat="@drawable/rating_star"
+            app:drawableTint="@color/white"
+            app:layout_constraintBottom_toBottomOf="@id/foodItemImage"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="4.2"
+            android:textAppearance="@style/TextAppearance.Material3.BodyMedium" />
+
+
+        <TextView
+            android:id="@+id/foodItemName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/foodItemImage"
+            android:layout_marginStart="@dimen/space_sm"
+            android:layout_marginTop="@dimen/space_sm"
+            tools:text="Veg Rice"
+            android:textAllCaps="true"
+            android:padding="@dimen/space_xxsm"
+            android:textColor="?attr/colorOnPrimary"
+            android:textAppearance="@style/TextAppearance.Material3.BodyLarge" />
+
+        <TextView
+            android:id="@+id/foodItemPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/foodItemName"
+            android:layout_marginStart="@dimen/space_sm"
+            android:layout_marginBottom="@dimen/space_sm"
+            tools:text="₹ 132.5"
+            android:textAllCaps="true"
+            android:padding="@dimen/space_xxsm"
+            android:textColor="?attr/colorOnPrimary"
+            android:textAppearance="@style/TextAppearance.Material3.BodyMedium" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginEnd="@dimen/space_sm"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/foodItemImage" >
+            <ImageView
+                android:id="@+id/reduceItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/space_sm"
+                android:clickable="true"
+                app:tint="?attr/colorOnPrimary"
+                android:src="@drawable/ic_remove"
+                android:contentDescription="@string/decreaseItemCount"/>
+
+            <TextView
+                android:id="@+id/itemCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/zero"
+                android:padding="@dimen/space_sm"
+                android:textColor="?attr/colorOnPrimary"
+                android:textAppearance="@style/TextAppearance.Material3.BodyLarge" />
+            <ImageView
+                android:id="@+id/addItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_add"
+                app:tint="?attr/colorOnPrimary"
+                android:clickable="true"
+                android:padding="@dimen/space_sm"
+                android:contentDescription="@string/increaseItemCount"/>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

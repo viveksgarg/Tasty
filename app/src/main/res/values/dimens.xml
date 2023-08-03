@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="image_height">200dp</dimen>
+    <dimen name="space_xxl">32dp</dimen>
+    <dimen name="icon_size_lg">60dp</dimen>
+    <dimen name="space_xxxsm">2dp</dimen>
+    <dimen name="space_mega_large">256dp</dimen>
+</resources>

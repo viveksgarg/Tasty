@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/launchPage">
+
+    <fragment
+        android:id="@+id/launchPage"
+        android:name="com.app.tasty.view.LaunchPage"
+        android:label="launch_page"
+        tools:layout="@layout/launch_page">
+        <action
+            android:id="@+id/action_launchPage_to_foodListPage"
+            app:destination="@id/foodListPage" />
+    </fragment>
+    <fragment
+        android:id="@+id/foodListPage"
+        android:name="com.app.tasty.view.FoodListPage"
+        android:label="food_list_page"
+        tools:layout="@layout/food_list_page">
+        <action
+            android:id="@+id/action_foodListPage_to_foodDetailPage"
+            app:destination="@id/foodDetailPage">
+            <argument
+                android:name="itemId"
+                app:argType="string" />
+<!--            <argument-->
+<!--                android:name="itemName"-->
+<!--                app:argType="string" />-->
+<!--            <argument-->
+<!--                android:name="itemPrice"-->
+<!--                app:argType="string" />-->
+<!--            <argument-->
+<!--                android:name="itemImage"-->
+<!--                app:argType="string" />-->
+<!--            <argument-->
+<!--                android:name="quantity"-->
+<!--                app:argType="string" />-->
+<!--            <argument-->
+<!--                android:name="itemRating"-->
+<!--                app:argType="string" />-->
+        </action>
+        <action
+            android:id="@+id/action_foodListPage_to_cartPage"
+            app:destination="@id/cartPage" />
+    </fragment>
+    <fragment
+        android:id="@+id/foodDetailPage"
+        android:name="com.app.tasty.view.FoodDetailPage"
+        android:label="food_detail_page"
+        tools:layout="@layout/food_detail_page">
+        <argument
+            android:name="itemId"
+            app:argType="string" />
+<!--        <argument-->
+<!--            android:name="itemName"-->
+<!--            app:argType="string" />-->
+<!--        <argument-->
+<!--            android:name="itemPrice"-->
+<!--            app:argType="string" />-->
+<!--        <argument-->
+<!--            android:name="itemImage"-->
+<!--            app:argType="string" />-->
+<!--        <argument-->
+<!--            android:name="quantity"-->
+<!--            app:argType="string" />-->
+<!--        <argument-->
+<!--            android:name="itemRating"-->
+<!--            app:argType="string" />-->
+        <action
+            android:id="@+id/action_foodDetailPage_to_cartPage"
+            app:destination="@id/cartPage" />
+    </fragment>
+    <fragment
+        android:id="@+id/cartPage"
+        android:name="com.app.tasty.view.CartPage"
+        android:label="cart_page"
+        tools:layout="@layout/cart_page" />
+</navigation>

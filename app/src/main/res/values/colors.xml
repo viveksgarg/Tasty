@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="atomicTangerine">#FC8570</color>
+    <color name="coral">#F58257</color>
+    <color name="greyWhite">#ECECEC</color>
+    <color name="green">#008000</color>
+    <color name="red">#ff0000</color>
+    <color name="my_color_on_primary">#3b3c36</color>
+    <color name="bg_color">#f2f2f2</color>
+    <color name="dividerLine">#c0c0c0</color>
+
+    // Dark theme colors
+
+    <color name="my_dark_primary">#121212</color>
+    <color name="my_dark_color_on_primary">#BB86FC</color>
+    <color name="dark_cart_bg_color">#121212</color>
+
+
+</resources>
