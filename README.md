@@ -1,7 +1,6 @@
 ## Introduction to Tasty
 
 This project was developed as part of a certification program introduced by our organization's management. The program required developers to become certified Android developers through two stages. 
-This is not my best work, to be fairly judged I have added a list of enhancements, that I plan to implement.
 
 - The first stage involved a Kotlin proficiency test, which I cleared on my first attempt with a score of 86 out of 100.
 - In the second stage, I delivered an application based on provided UI/UX wireframes, achieving a score of around 84. While the application meets the initial requirements, there are areas for improvement which I plan to address in future iterations.
@@ -15,3 +14,5 @@ Enhancements planned for future iterations:
 - Integrate CI/CD pipelines using GitHub Actions to automate testing processes.
   - Add LINT checks for code quality and style adherence.
   - Automate UI tests and unit tests execution as part of the CI pipeline.
+
+## Note for the interview panel, This is not my best work, to be fairly judged I have added a list of enhancements, that I plan to implement.
