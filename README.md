@@ -11,6 +11,7 @@ Enhancements planned for future iterations:
 - Incorporate unit tests as well as UI tests into the application for ensuring code quality and application robustness.
 - Migrate from SharedPreferences to KeyStore implementation for improved security of sensitive data.
 - Incorporate StateFlow instead of LiveData for better handling of data streams in the UI.
+- Implement resource modeling using sealed classes and interfaces, and follow proper data patterns for creating data maps, DTOs, models, error models, and classes to handle JSON responses and loading     effectively.
 - Integrate CI/CD pipelines using GitHub Actions to automate testing processes.
   - Add LINT checks for code quality and style adherence.
   - Automate UI tests and unit tests execution as part of the CI pipeline.
